@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "lint": "./node_modules/.bin/eslint",
     "check-lint": "lint [0-9]*.js",
-    "test": "./node_modules/.bin/mocha --require @babel/register --exit",
-    "dev": "nodemon index.js"
+    "test": "./node_modules/.bin/mocha --require @babel/register --exit"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +16,7 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "concurrently": "^8.2.2",
+    "config": "^3.3.11",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.2",
@@ -34,7 +35,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^22.17.0",
     "mocha": "^6.2.2",
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.22",
     "request": "^2.88.0",
     "sinon": "^7.5.0"
   }
